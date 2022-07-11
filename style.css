@@ -18,6 +18,35 @@ body{
   height: 100vh;
 }
 
+.panel{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.678);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+}
+.panel button{
+  margin: 25px;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  color: white;
+}
+.panel h1{
+  margin: 25px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .table{
   height: 450px;
   width: 450px;
