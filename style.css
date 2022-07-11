@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.table{
+  height: 450px;
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 90px;
+}
+
+.cell{
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.turn{
+  font-size: 25px;
+}
+
+.turn .player{
+  background: linear-gradient(80deg, #306DA6 1.80%, #42A4FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
