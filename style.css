@@ -1,5 +1,5 @@
 @font-face {
-  font-family: SFDisplayProMedium;
+  font-family: SFProDisplayMedium;
   src: url(fonts/SFPRODISPLAYMEDIUM.OTF);
 }
 
@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: SFDisplayProMedium;
+  font-family: SFProDisplayMedium;
 }
 
 body{
@@ -16,35 +16,6 @@ body{
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-}
-
-.panel{
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  background-color: rgba(255, 255, 255, 0.678);
-  backdrop-filter: blur(2px);
-  border-radius: 10px;
-}
-.panel button{
-  margin: 25px;
-  width: 200px;
-  height: 60px;
-  border-radius: 10px;
-  cursor: pointer;
-  border: none;
-  font-size: 20px;
-  color: white;
-}
-.panel h1{
-  margin: 25px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .table{
@@ -58,7 +29,7 @@ body{
 .cell{
   width: 150px;
   height: 150px;
-  border: 1px solid black;
+  border: solid 1px black;
   cursor: pointer;
   background-position: center;
   background-size: 60%;
@@ -83,4 +54,35 @@ body{
   background-image: url(images/x.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.panel{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.678);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+}
+
+.panel button{
+  margin: 25px;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  color: white;
+}
+
+.panel h1{
+  margin: 25px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
